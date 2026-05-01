@@ -3,7 +3,7 @@
 ## DashBooking landing page
 - Tone: premium, simple, readable, calm confidence.
 - Audience: busy salon owners, including older owners who need clarity fast.
-- Structure order: header, hero, trust band, Canada cities, AI demo, pricing, scope cards, Clover/Poynt + add-ons, why DashBooking, FAQ, final CTA, footer.
+- Structure order: header, hero, trust band, pricing, Canada cities, scope cards, AI demo, Clover/Poynt + add-ons, FAQ, final CTA, footer.
 - Mobile-first. Large tap targets. Native audio controls. Semantic HTML.
 - Static-only page; no client-side app behavior beyond light interaction affordances.
 
@@ -27,6 +27,7 @@
 - Add-ons visibly secondary.
 - No visible phone number in the page chrome or footer.
 - Add Google partner trust above pricing and support it with the Google partner badge/link.
+- Use a compact locale-specific Google partner label in the header so the badge stays stable on narrow or zoomed displays.
 - Vietnamese is launch-default locale, but page routes remain `/vi`, `/en`, `/fr`.
 
 ## Implementation rules

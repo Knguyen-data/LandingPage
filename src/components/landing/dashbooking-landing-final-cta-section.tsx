@@ -18,7 +18,7 @@ export function DashbookingLandingFinalCtaSection({
           <a href={partnerWithUsUrl} className="button-link">
             {content.finalCta.primaryCta}
           </a>
-          <a href="#ai-demo" className="button-link button-link--secondary">
+          <a href="#ai-receptionist" className="button-link button-link--secondary">
             {content.finalCta.secondaryCta}
           </a>
         </div>

@@ -9,7 +9,7 @@ export function DashbookingLandingFaqSection({ content }: DashbookingLandingFaqS
     <section className="section-shell">
       <div className="container stack-lg">
         <div className="section-heading stack-md">
-          <span className="eyebrow">{content.faq.eyebrow}</span>
+          {content.faq.eyebrow ? <span className="eyebrow">{content.faq.eyebrow}</span> : null}
           <h2 className="title-lg">{content.faq.title}</h2>
         </div>
         <div className="faq-list" role="list">

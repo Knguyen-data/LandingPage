@@ -26,7 +26,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <body className={`${headingFont.variable} ${bodyFont.variable}`}>
         {children}
       </body>

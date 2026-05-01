@@ -21,13 +21,8 @@ export function DashbookingLandingCanadaCitiesSection({
     <section className="section-shell canada-cities">
       <div className="container surface-card canada-cities__card stack-lg">
         <div className="stack-md canada-cities__intro">
-          <span className="eyebrow canada-cities__eyebrow">
-            <span className="canada-cities__flag" aria-hidden="true">
-              🇨🇦
-            </span>
-            {content.customerCities.eyebrow}
-          </span>
-          <h2 className="title-lg">{content.customerCities.title}</h2>
+          {content.customerCities.eyebrow ? <span className="eyebrow canada-cities__eyebrow">{content.customerCities.eyebrow}</span> : null}
+          <h2 className="title-lg canada-cities__title">{content.customerCities.title}</h2>
         </div>
 
         <ul

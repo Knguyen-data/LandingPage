@@ -14,7 +14,7 @@ Dash Booking landing page, built as a static Next.js app with locale-aware conte
 - The landing page is assembled from reusable sections in a fixed order.
 - Content is localized through typed content modules and a locale map.
 - The page emphasizes Google booking trust, pricing clarity, and AI receptionist demos.
-- The current direction is static-only; no visible phone number or calendar proof section is part of the approved landing experience.
+- The current direction is static-only; no visible phone number, calendar proof section, or separate why section is part of the approved landing experience.
 
 ## Maintenance notes
 - Keep content and docs aligned when the landing order or pricing changes.

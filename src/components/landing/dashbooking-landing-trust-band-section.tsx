@@ -14,19 +14,11 @@ export function DashbookingLandingTrustBandSection({
     <section className="section-shell">
       <div className="container surface-card trust-band">
         <div className="stack-lg trust-band__intro">
-          <span className="eyebrow">{content.trust.eyebrow}</span>
-          <div className="stack-md trust-band__partner">
-            <Image src={googleLogo} alt={content.trust.logoAlt} width={272} height={92} className="trust-band__logo" />
-            <h2 className="title-lg">{content.trust.title}</h2>
-            <a
-              href={content.trust.partnerCtaHref}
-              className="button-link button-link--secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {content.trust.partnerCtaLabel}
-            </a>
+          <div className="trust-band__partner-label">
+            <Image src={googleLogo} alt={content.trust.logoAlt} width={172} height={58} className="trust-band__logo" />
+            <span className="eyebrow">{content.trust.eyebrow}</span>
           </div>
+          <h2 className="title-lg">{content.trust.title}</h2>
           <div className="trust-band__summary stack-md">
             <div className="trust-band__flags">
               {trustMarketFlags.map((market) => (
@@ -50,6 +42,14 @@ export function DashbookingLandingTrustBandSection({
               ))}
             </div>
           </div>
+          <a
+            href={content.trust.partnerCtaHref}
+            className="button-link button-link--secondary trust-band__cta"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {content.trust.partnerCtaLabel}
+          </a>
         </div>
       </div>
     </section>

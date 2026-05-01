@@ -1,8 +1,6 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-node_modules
-/.pnp
+node_modules/
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -11,16 +9,15 @@ node_modules
 !.yarn/versions
 
 # testing
-/coverage
+coverage/
+.nyc_output/
 
 # next.js
-/.next/
-/out/
-dist/
-bin/
+.next/
+out/
 
 # production
-/build
+build/
 
 # misc
 .DS_Store
@@ -32,59 +29,37 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# package manager
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# semantic-release
-.nyc_output
-
-# env files (can opt-in for committing if needed)
+# env files
 .env*
 !.env.example
 
-# local Claude / planning / test workspace
-.claude/
-plans/
-tests/
-tmp-*.png
-tmp-*.jpg
-tmp-*.jpeg
-
 # vercel
-.vercel
+.vercel/
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
-# flutter
-.dart_tool
-build
-GoogleService-Info.plist
+# non-hosting project files
+.claude/
+plans/
+docs/
+tests/
+research/
+feedback/
+resource/
+CLAUDE.md
+README.md
 
-.claude/commands/docs/ck-init.md
-.claude/commands/docs/ck-update.md
-.claude/session-state/
-repomix-output.xml
-.serena/cache
-# plans/**/*
-# !plans/templates/*
-screenshots/*
-docs/screenshots/*
-docs/research/*
-logs.txt
-test-ck
-__pycache__
-prompt.md
-
-# Gemini CLI settings (symlink to .claude/.mcp.json)
+# local tooling artifacts
+.mcp.json
+.gemini/*
 .gemini/settings.json
-.claude/settings.bak.json
-
-assets/videos/long
-
-# Video project outputs (large files)
-videos/*/out/*.mp4
-videos/*/node_modules
+.credentials/
+secrets/*
+!secrets/.gitkeep
+!secrets/*.example.json
+.playwright-mcp/
+.serena/
+repomix-output.xml
+release-manifest.json

@@ -10,38 +10,27 @@ export interface TrustStat {
   readonly label: string;
 }
 
-export interface DemoCardContent {
-  readonly id: string;
-  readonly title: string;
-  readonly description: string;
-}
-
 export interface PricingTier {
   readonly range: string;
   readonly selectorLabel: string;
   readonly price: string;
 }
 
-export interface PricingInfoCard {
-  readonly title: string;
-  readonly items: readonly string[];
-}
-
 export interface ScopeCard {
   readonly title: string;
   readonly description: string;
-  readonly bullets: readonly string[];
+  readonly bullets?: readonly string[];
 }
 
 export interface OptionalItem {
+  readonly slug?: string;
   readonly name: string;
   readonly price: string;
   readonly description: string;
-}
-
-export interface ReasonItem {
-  readonly title: string;
-  readonly description: string;
+  readonly priceLines?: readonly string[];
+  readonly bullets?: readonly string[];
+  readonly ctaLabel?: string;
+  readonly ctaHref?: string;
 }
 
 export interface FaqItem {
@@ -72,9 +61,11 @@ export interface LandingContent {
     readonly homeAriaLabel: string;
     readonly navAriaLabel: string;
     readonly localeSwitcherAriaLabel: string;
+    readonly partnerPillLabel: string;
   };
   readonly hero: {
     readonly eyebrow: string;
+    readonly partnerPills: readonly string[];
     readonly headline: string;
     readonly supportLine: string;
     readonly subtitle: string;
@@ -99,7 +90,12 @@ export interface LandingContent {
   readonly ai: {
     readonly eyebrow: string;
     readonly title: string;
-    readonly cards: readonly DemoCardContent[];
+    readonly description: string;
+    readonly supportLine: string;
+    readonly price: string;
+    readonly priceLines: readonly string[];
+    readonly demoTitle: string;
+    readonly demoIds: readonly string[];
   };
   readonly pricing: {
     readonly eyebrow: string;
@@ -108,10 +104,8 @@ export interface LandingContent {
     readonly tiers: readonly PricingTier[];
     readonly selectorAriaLabel: string;
     readonly smsNote: string;
+    readonly processingFeeNote: string;
     readonly ctaLabel: string;
-    readonly chargedCard: PricingInfoCard;
-    readonly notChargedCard: PricingInfoCard;
-    readonly aiAddOnNote: string;
   };
   readonly includes: {
     readonly eyebrow: string;
@@ -122,20 +116,15 @@ export interface LandingContent {
   readonly addOns: {
     readonly eyebrow: string;
     readonly title: string;
+    readonly supportLine: string;
+    readonly terminalTitle: string;
     readonly terminalIntro: string;
     readonly terminalBadge: string;
     readonly terminalRates: readonly string[];
     readonly terminalDisclaimer: string;
-    readonly optionalTitle: string;
     readonly terminalListAriaLabel: string;
     readonly optionalListAriaLabel: string;
     readonly optionalItems: readonly OptionalItem[];
-  };
-  readonly whyChoose: {
-    readonly eyebrow: string;
-    readonly title: string;
-    readonly reasons: readonly ReasonItem[];
-    readonly reasonsAriaLabel: string;
   };
   readonly faq: {
     readonly eyebrow: string;

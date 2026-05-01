@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 
-import { partnerWithUsUrl } from '@/content/landing/dashbooking-landing-shared-data';
 import type { LandingContent } from '@/content/landing/dashbooking-landing-content-types';
+import { trustMarketFlags } from '@/content/landing/dashbooking-landing-shared-data';
 
 interface DashbookingLandingPricingSectionProps {
   readonly content: LandingContent;
@@ -37,10 +37,9 @@ export function DashbookingLandingPricingSection({
   return (
     <section id="pricing" className="section-shell">
       <div className="container pricing-shell stack-lg">
-        <span className="eyebrow">{content.pricing.eyebrow}</span>
         <div className="stack-sm pricing-shell__header">
           <h2 className="title-lg">{content.pricing.title}</h2>
-          <p className="pricing-shell__support-line">{content.pricing.supportLine}</p>
+          {content.pricing.supportLine ? <p className="pricing-shell__support-line">{content.pricing.supportLine}</p> : null}
         </div>
         <div className="pricing-selector" role="group" aria-label={content.pricing.selectorAriaLabel}>
           {content.pricing.tiers.map((tier, index) => {
@@ -66,29 +65,23 @@ export function DashbookingLandingPricingSection({
             {selectedPrice.suffix ? <small>{selectedPrice.suffix}</small> : null}
           </p>
           <p className="pricing-shell__sms-note">{content.pricing.smsNote}</p>
-          <a href={partnerWithUsUrl} className="button-link pricing-selection__cta">
-            {content.pricing.ctaLabel}
-          </a>
+          <p className="pricing-shell__processing-fee">{content.pricing.processingFeeNote}</p>
         </div>
-        <div className="pricing-support-grid" role="list">
-          <article className="surface-card pricing-support-card stack-sm" role="listitem">
-            <span className="kicker">{content.pricing.chargedCard.title}</span>
-            <ul className="landing-bullets landing-bullets--compact">
-              {content.pricing.chargedCard.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-          <article className="surface-card pricing-support-card stack-sm" role="listitem">
-            <span className="kicker">{content.pricing.notChargedCard.title}</span>
-            <ul className="landing-bullets landing-bullets--compact">
-              {content.pricing.notChargedCard.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
+        <div className="pricing-stats" role="list" aria-label={content.trust.statsAriaLabel}>
+          {content.trust.stats.map((stat) => (
+            <article key={stat.label} className="pricing-stat surface-card" role="listitem">
+              <strong>{stat.value}</strong>
+              <span>{stat.label}</span>
+            </article>
+          ))}
         </div>
-        <p className="copy-sm text-muted pricing-footnote">{content.pricing.aiAddOnNote}</p>
+        <div className="pricing-market-flags" aria-hidden="true">
+          {trustMarketFlags.map((market) => (
+            <span key={market.country} className="pricing-market-flag" title={market.country}>
+              {market.flag}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
