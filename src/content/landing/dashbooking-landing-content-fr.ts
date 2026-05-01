@@ -16,7 +16,7 @@ export const dashbookingLandingContentFr: LandingContent = {
     homeAriaLabel: 'Aller à l’accueil de Dash Booking',
     navAriaLabel: 'Sections de la page',
     localeSwitcherAriaLabel: 'Changer de langue',
-    partnerPillLabel: 'Partenaire Google autorisé',
+    partnerPillLabel: 'Liste des partenaires Google autorisés',
   },
   hero: {
     eyebrow: 'Google Booking',

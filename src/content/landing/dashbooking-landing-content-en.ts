@@ -16,7 +16,7 @@ export const dashbookingLandingContentEn: LandingContent = {
     homeAriaLabel: 'Go to Dash Booking home',
     navAriaLabel: 'Page sections',
     localeSwitcherAriaLabel: 'Switch language',
-    partnerPillLabel: 'Google Authorized Partner',
+    partnerPillLabel: 'Google Authorized Partners List',
   },
   hero: {
     eyebrow: 'Google Booking',
