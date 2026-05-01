@@ -31,7 +31,6 @@ yarn-error.log*
 
 # env files
 .env*
-!.env.example
 
 # vercel
 .vercel/
@@ -48,11 +47,13 @@ tests/
 research/
 feedback/
 resource/
+artifacts/
 CLAUDE.md
 README.md
 
 # local tooling artifacts
 .mcp.json
+.repomixignore
 .gemini/*
 .gemini/settings.json
 .credentials/
