@@ -3,7 +3,6 @@ import { googlePartnersUrl } from '@/content/landing/dashbooking-landing-shared-
 
 export const dashbookingLandingContentVi: LandingContent = {
   locale: 'vi',
-  localeLabel: 'Tiếng Việt',
   metadata: {
     title: 'Dash Booking cho tiệm nail và beauty',
     description: 'Google Booking, pricing trả theo booking, hệ thống quản lý tiệm và các add-on cho salon.',
@@ -21,7 +20,6 @@ export const dashbookingLandingContentVi: LandingContent = {
   },
   hero: {
     eyebrow: 'Google Booking',
-    partnerPills: ['Google Authorized Partner', 'Đối tác trực tiếp với Google'],
     headline: 'Không có khách, không trả phí',
     supportLine: '',
     subtitle: 'No Contract - No Setup Fee',
@@ -29,7 +27,6 @@ export const dashbookingLandingContentVi: LandingContent = {
     bulletsAriaLabel: 'Điểm chính của Dash Booking',
     primaryCta: '',
     secondaryCta: '',
-    lowRiskNote: '',
     graphicLabel: 'Hình điện thoại hiển thị trang salon Dash Booking và tính năng đặt lịch',
     priceBadge: '$0/tháng để bắt đầu',
   },
@@ -203,14 +200,8 @@ export const dashbookingLandingContentVi: LandingContent = {
       },
     ],
   },
-  finalCta: {
-    title: 'Muốn thử Dash Booking cho tiệm của bạn?',
-    primaryCta: 'Đăng ký miễn phí',
-    secondaryCta: 'Nghe AI Receptionist',
-  },
   footer: {
     summary: 'All-in-one platform for beauty salon',
-    languageLabel: 'Ngôn ngữ',
     rights: '© Dash Booking. All rights reserved.',
   },
 };

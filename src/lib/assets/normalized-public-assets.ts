@@ -1,5 +1,4 @@
 export const normalizedPublicAssets = {
-  appointmentCalendar: '/assets/appointment-calendar.png',
   heroGraphic: '/assets/hero-graphic.png',
   googleLogo: '/assets/logo-google.png',
   cloverTerminal: '/assets/clover-terminal.png',

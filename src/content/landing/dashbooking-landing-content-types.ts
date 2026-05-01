@@ -54,7 +54,6 @@ export interface MetadataCopy {
 export interface LandingContent {
   readonly locale: AppLocale;
   readonly metadata: MetadataCopy;
-  readonly localeLabel: string;
   readonly header: {
     readonly nav: readonly LandingNavItem[];
     readonly cta: string;
@@ -65,7 +64,6 @@ export interface LandingContent {
   };
   readonly hero: {
     readonly eyebrow: string;
-    readonly partnerPills: readonly string[];
     readonly headline: string;
     readonly supportLine: string;
     readonly subtitle: string;
@@ -73,7 +71,6 @@ export interface LandingContent {
     readonly bulletsAriaLabel: string;
     readonly primaryCta: string;
     readonly secondaryCta: string;
-    readonly lowRiskNote: string;
     readonly graphicLabel: string;
     readonly priceBadge: string;
   };
@@ -131,14 +128,8 @@ export interface LandingContent {
     readonly title: string;
     readonly items: readonly FaqItem[];
   };
-  readonly finalCta: {
-    readonly title: string;
-    readonly primaryCta: string;
-    readonly secondaryCta: string;
-  };
   readonly footer: {
     readonly summary: string;
-    readonly languageLabel: string;
     readonly rights: string;
   };
 }

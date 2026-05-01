@@ -3,7 +3,6 @@ import { googlePartnersUrl } from '@/content/landing/dashbooking-landing-shared-
 
 export const dashbookingLandingContentEn: LandingContent = {
   locale: 'en',
-  localeLabel: 'English',
   metadata: {
     title: 'Dash Booking for nail and beauty salons',
     description: 'Google Booking, pay-as-you-go pricing, salon management, and optional add-ons.',
@@ -21,7 +20,6 @@ export const dashbookingLandingContentEn: LandingContent = {
   },
   hero: {
     eyebrow: 'Google Booking',
-    partnerPills: ['Google Authorized Partner', 'Direct Google Partner'],
     headline: 'No customers, no fee',
     supportLine: '',
     subtitle: 'No Contract - No Setup Fee',
@@ -29,7 +27,6 @@ export const dashbookingLandingContentEn: LandingContent = {
     bulletsAriaLabel: 'Main Dash Booking highlights',
     primaryCta: '',
     secondaryCta: '',
-    lowRiskNote: '',
     graphicLabel: 'Phone mockup showing the Dash Booking salon page and booking flow',
     priceBadge: '$0/month to start',
   },
@@ -203,14 +200,8 @@ export const dashbookingLandingContentEn: LandingContent = {
       },
     ],
   },
-  finalCta: {
-    title: 'Want to try Dash Booking for your salon?',
-    primaryCta: 'Sign up free',
-    secondaryCta: 'Listen to AI Receptionist',
-  },
   footer: {
     summary: 'All-in-one platform for beauty salon',
-    languageLabel: 'Language',
     rights: '© Dash Booking. All rights reserved.',
   },
 };

@@ -1,6 +1,5 @@
 import { normalizedPublicAssets } from '@/lib/assets/normalized-public-assets';
 
-export const partnerWithUsUrl = 'https://www.dashbooking.com/business/partner-with-us';
 export const googlePartnersUrl = 'https://www.google.com/maps/reserve/partners';
 
 export const trustMarketFlags = [
@@ -17,6 +16,5 @@ export const terminalAssets = [
   { name: 'Poynt', imageSrc: normalizedPublicAssets.poyntTerminal },
 ] as const;
 
-export const calendarScreenshot = normalizedPublicAssets.appointmentCalendar;
 export const heroGraphic = normalizedPublicAssets.heroGraphic;
 export const googleLogo = normalizedPublicAssets.googleLogo;
