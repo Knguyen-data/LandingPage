@@ -1,6 +1,7 @@
 export const normalizedPublicAssets = {
   heroGraphic: '/assets/hero-graphic.png',
   googleLogo: '/assets/logo-google.png',
+  freeTag: '/assets/free-tag.png',
   cloverTerminal: '/assets/clover-terminal.png',
   poyntTerminal: '/assets/poynt-terminal.png',
   aiReceptionist: {

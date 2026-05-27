@@ -7,6 +7,7 @@ import {
   RevealGroup,
   RevealItem,
 } from '@/components/landing/dashbooking-landing-motion-primitives';
+import { DashbookingLandingReviewResponseDemo } from '@/components/landing/dashbooking-landing-review-response-demo';
 import { terminalAssets } from '@/content/landing/dashbooking-landing-shared-data';
 import type { LandingContent, OptionalItem } from '@/content/landing/dashbooking-landing-content-types';
 
@@ -58,6 +59,9 @@ export function DashbookingLandingTerminalsAndAddOnsSection({
     <section id="optional-features" className="section-shell">
       <MotionScope>
         <RevealGroup className="container stack-lg" stagger={0.06}>
+          <RevealItem>
+            <DashbookingLandingReviewResponseDemo content={content.reviewResponseDemo} />
+          </RevealItem>
           <RevealItem>
             <div className="stack-md section-heading">
               {content.addOns.eyebrow ? <span className="eyebrow">{content.addOns.eyebrow}</span> : null}

@@ -33,6 +33,24 @@ export interface OptionalItem {
   readonly ctaHref?: string;
 }
 
+export interface ReviewResponseDemoReview {
+  readonly customerName: string;
+  readonly ratingLabel: string;
+  readonly review: string;
+  readonly response: string;
+}
+
+export interface ReviewResponseDemoContent {
+  readonly eyebrow: string;
+  readonly title: string;
+  readonly supportLine: string;
+  readonly reviewsAriaLabel: string;
+  readonly generateLabel: string;
+  readonly responseLabel: string;
+  readonly emptyResponse: string;
+  readonly reviews: readonly ReviewResponseDemoReview[];
+}
+
 export interface FaqItem {
   readonly question: string;
   readonly answer: string;
@@ -94,6 +112,7 @@ export interface LandingContent {
     readonly demoTitle: string;
     readonly demoIds: readonly string[];
   };
+  readonly reviewResponseDemo: ReviewResponseDemoContent;
   readonly pricing: {
     readonly eyebrow: string;
     readonly title: string;

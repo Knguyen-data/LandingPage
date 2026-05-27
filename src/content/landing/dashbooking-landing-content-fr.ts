@@ -72,6 +72,35 @@ export const dashbookingLandingContentFr: LandingContent = {
       'rescheduling-appoinment',
     ],
   },
+  reviewResponseDemo: {
+    eyebrow: 'Avis Google',
+    title: 'Réponse IA aux avis Google',
+    supportLine: 'Gratuit. Choisissez un avis et générez une réponse claire.',
+    reviewsAriaLabel: 'Exemples d’avis Google',
+    generateLabel: 'Générer la réponse IA',
+    responseLabel: 'Réponse IA',
+    emptyResponse: 'Choisissez un avis, puis générez une réponse.',
+    reviews: [
+      {
+        customerName: 'Camille T.',
+        ratingLabel: '★☆☆☆☆ 1.0',
+        review: 'J’avais rendez-vous à 15 h, mais j’ai attendu longtemps. Personne ne m’a vraiment expliqué pourquoi.',
+        response: 'Bonjour Camille, merci pour votre retour. Nous sommes désolés pour l’attente et le manque d’explication. Nous allons revoir notre gestion des rendez-vous pour mieux communiquer avec nos clientes. Nous espérons pouvoir vous offrir une meilleure expérience la prochaine fois.',
+      },
+      {
+        customerName: 'Nadia L.',
+        ratingLabel: '★★★☆☆ 3.0',
+        review: 'Le résultat était beau, mais la fin du rendez-vous m’a semblé un peu pressée.',
+        response: 'Bonjour Nadia, merci pour votre avis honnête. Nous sommes heureux que le résultat vous ait plu, et nous sommes désolés que la fin ait semblé pressée. Nous allons en tenir compte pour mieux rythmer chaque rendez-vous.',
+      },
+      {
+        customerName: 'Élise R.',
+        ratingLabel: '★★★★★ 5.0',
+        review: 'Très beau travail, équipe gentille, et la réservation en ligne était simple.',
+        response: 'Bonjour Élise, merci beaucoup. Nous sommes ravis que vous ayez aimé le service et la réservation en ligne. Votre soutien compte beaucoup pour nous. Au plaisir de vous revoir bientôt.',
+      },
+    ],
+  },
   pricing: {
     eyebrow: 'Tarifs',
     title: 'Paiement à l’usage',

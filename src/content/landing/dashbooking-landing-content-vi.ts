@@ -72,6 +72,35 @@ export const dashbookingLandingContentVi: LandingContent = {
       'rescheduling-appoinment',
     ],
   },
+  reviewResponseDemo: {
+    eyebrow: 'Google Reviews',
+    title: 'AI trả lời Google Review',
+    supportLine: 'Đề xuất câu trả lời riêng cho từng khách.',
+    reviewsAriaLabel: 'Các Google review mẫu',
+    generateLabel: 'Tạo phản hồi AI',
+    responseLabel: 'Phản hồi AI',
+    emptyResponse: 'Chọn review rồi bấm tạo phản hồi.',
+    reviews: [
+      {
+        customerName: 'Maya T.',
+        ratingLabel: '★☆☆☆☆ 1.0',
+        review: 'I booked for 3 PM but still had to wait a long time. Nobody explained what was happening.',
+        response: 'Hi Maya, thank you for sharing this. We are sorry for the long wait and the lack of communication. We are reviewing our booking flow so this is handled better next time. We hope we can welcome you back and give you a smoother visit.',
+      },
+      {
+        customerName: 'Sophie L.',
+        ratingLabel: '★★★☆☆ 3.0',
+        review: 'The nails looked good, but the appointment felt rushed near the end.',
+        response: 'Hi Sophie, thank you for the honest feedback. We are happy you liked the result, and we are sorry the ending felt rushed. We will use this to improve how we pace each appointment. We would love to see you again.',
+      },
+      {
+        customerName: 'Amanda R.',
+        ratingLabel: '★★★★★ 5.0',
+        review: 'Beautiful work and very friendly staff. Booking online was easy too.',
+        response: 'Hi Amanda, thank you so much. We are glad you loved the service and that online booking was easy. We appreciate your support and look forward to seeing you again soon.',
+      },
+    ],
+  },
   pricing: {
     eyebrow: 'Bảng giá',
     title: 'Pay As You Go',
