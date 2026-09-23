@@ -229,7 +229,7 @@ function WebsiteGallery({ copy }: { readonly copy: WebsiteDesignSectionContent }
       <div className="website-design__gallery-stage">
         <button
           type="button"
-          className="website-design__gallery-nav"
+          className="website-design__gallery-nav website-design__gallery-nav--prev"
           aria-label={copy.prevLabel}
           onClick={() => scrollByCard(-1)}
         >
@@ -256,7 +256,7 @@ function WebsiteGallery({ copy }: { readonly copy: WebsiteDesignSectionContent }
                 </span>
               </span>
               <strong>{salon.name}</strong>
-              <span>
+              <span className="website-design__gallery-city">
                 {salon.city}
                 <span className="visually-hidden">{copy.viewWebsiteLabel}</span>
               </span>
@@ -265,7 +265,7 @@ function WebsiteGallery({ copy }: { readonly copy: WebsiteDesignSectionContent }
         </div>
         <button
           type="button"
-          className="website-design__gallery-nav"
+          className="website-design__gallery-nav website-design__gallery-nav--next"
           aria-label={copy.nextLabel}
           onClick={() => scrollByCard(1)}
         >

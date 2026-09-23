@@ -87,7 +87,7 @@ export function DashbookingLandingHeroSection({ content }: DashbookingLandingHer
                       aria-hidden="true"
                     >
                       <m.path
-                        d="M42 70 C 18 58, 16 24, 52 14 C 82 6, 138 8, 186 20 C 220 30, 228 52, 204 68 C 180 84, 118 88, 68 80 C 40 74, 30 62, 44 56 C 54 52, 70 56, 82 62"
+                        d="M16 48 C 14 22, 58 6, 120 8 C 188 10, 228 22, 226 48 C 224 76, 174 92, 112 90 C 44 88, 12 72, 16 48"
                         stroke="#EF4444"
                         strokeWidth="2.35"
                         strokeLinecap="round"
@@ -116,7 +116,7 @@ export function DashbookingLandingHeroSection({ content }: DashbookingLandingHer
                     aria-hidden="true"
                   >
                     <m.path
-                      d="M1 8.6 C 38 12.2, 78 5.2, 118 8.8 C 148 11.6, 168 7.2, 179 8.8"
+                      d="M2 7 C 46 11, 96 3.5, 140 7.5 C 162 9.5, 176 5.5, 178 6.5"
                       stroke="#EF4444"
                       strokeWidth="2.3"
                       strokeLinecap="round"
