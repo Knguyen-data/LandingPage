@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import { useState } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 
@@ -95,6 +96,7 @@ export function DashbookingLandingBookingJourneySection({
             </ol>
           </div>
         </div>
+        <SectionLeadCta locale={content.locale} section="journey" />
       </MotionScope>
     </section>
   );

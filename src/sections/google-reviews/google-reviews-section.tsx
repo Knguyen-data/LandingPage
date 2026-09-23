@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import Image from '@/components/viewport-image';
 import { BarChart3, Gift, UserRound, Zap } from 'lucide-react';
 
@@ -86,6 +87,7 @@ export function DashbookingLandingGoogleReviewsSection({
             </ul>
           </SectionReveal>
         </div>
+        <SectionLeadCta locale={content.locale} section="reviews" />
       </MotionScope>
     </section>
   );

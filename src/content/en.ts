@@ -31,7 +31,7 @@ export const dashbookingLandingContentEn: LandingContent = {
     partnerProofNoun: 'salons',
     partnerProofTail: 'across the',
     partnerProofPlace: 'US and Canada',
-    primaryCta: 'Get advice for your salon',
+    primaryCta: 'Get advice',
     primaryCtaHref: '#lead-capture',
     toggleWithoutLabel: 'Without Dash',
     toggleWithLabel: 'With Dash',

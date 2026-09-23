@@ -1,3 +1,4 @@
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import type { LandingContent } from '@/content/types';
 import { MotionScope, RevealGroup, RevealItem } from '@/components/motion-primitives';
 
@@ -27,6 +28,7 @@ export function DashbookingLandingFaqSection({ content }: DashbookingLandingFaqS
             </div>
           </div>
         </RevealGroup>
+        <SectionLeadCta locale={content.locale} section="faq" />
       </MotionScope>
     </section>
   );

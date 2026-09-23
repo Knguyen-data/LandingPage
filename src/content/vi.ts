@@ -31,7 +31,7 @@ export const dashbookingLandingContentVi: LandingContent = {
     partnerProofNoun: 'tiệm',
     partnerProofTail: 'tại',
     partnerProofPlace: 'Mỹ và Canada',
-    primaryCta: 'Tư vấn cho tiệm của tôi',
+    primaryCta: 'Tư vấn',
     primaryCtaHref: '#lead-capture',
     toggleWithoutLabel: 'Không có Dash',
     toggleWithLabel: 'Có Dash',

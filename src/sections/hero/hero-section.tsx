@@ -62,7 +62,7 @@ export function DashbookingLandingHeroSection({ content }: DashbookingLandingHer
               <span className="landing-hero__title-accent">{content.hero.headlineAccent}</span>
             </h1>
             <p className="landing-hero__lede">{content.hero.subtitle}</p>
-            <a href={content.hero.primaryCtaHref} className="button-link landing-hero__cta">
+            <a href={content.hero.primaryCtaHref} className="button-link landing-hero__cta lead-cta">
               <span className="landing-hero__cta-label">{content.hero.primaryCta}</span>
               <ArrowRight size={18} strokeWidth={2.4} />
             </a>

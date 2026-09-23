@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import { useState } from 'react';
 import { CalendarCheck, Clock, PhoneCall } from 'lucide-react';
 
@@ -73,6 +74,7 @@ export function DashbookingLandingAiReceptionistSection({
             />
           </SectionReveal>
         </div>
+        <SectionLeadCta locale={content.locale} section="ai" />
       </MotionScope>
     </section>
   );

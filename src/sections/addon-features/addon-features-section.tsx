@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import { DashbookingLandingAddonDepositDemo } from '@/sections/addon-features/addon-deposit-demo';
 import { DashbookingLandingAddonGiftCardDemo } from '@/sections/addon-features/addon-gift-card-demo';
 import { MotionScope, SectionReveal } from '@/components/motion-primitives';
@@ -54,6 +55,7 @@ export function DashbookingLandingAddonFeaturesSection({ content }: DashbookingL
             </SectionReveal>
           </div>
         </div>
+        <SectionLeadCta locale={content.locale} section="addons" />
       </MotionScope>
     </section>
   );

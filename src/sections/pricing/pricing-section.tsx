@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import { AnimatePresence, useReducedMotion } from 'motion/react';
 import * as m from 'motion/react-m';
 import { Check } from 'lucide-react';
@@ -136,6 +137,7 @@ export function DashbookingLandingPricingSection({
             </div>
           </RevealItem>
         </RevealGroup>
+        <SectionLeadCta locale={content.locale} section="pricing" />
       </MotionScope>
     </section>
   );

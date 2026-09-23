@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import Image from '@/components/viewport-image';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -369,6 +370,7 @@ export function DashbookingLandingWebsiteDesignSection({
             </SectionReveal>
           </div>
         </div>
+        <SectionLeadCta locale={content.locale} section="website" />
       </MotionScope>
     </section>
   );

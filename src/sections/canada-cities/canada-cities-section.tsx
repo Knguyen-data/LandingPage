@@ -1,5 +1,6 @@
 'use client';
 
+import { SectionLeadCta } from '@/components/section-lead-cta';
 import { useState } from 'react';
 
 import { dashbookingCanadaCityLinks } from '@/content/canada-cities';
@@ -67,6 +68,7 @@ export function DashbookingLandingCanadaCitiesSection({
             </SectionReveal>
           ) : null}
         </div>
+        <SectionLeadCta locale={content.locale} section="cities" />
       </MotionScope>
     </section>
   );

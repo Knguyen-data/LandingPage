@@ -18,6 +18,7 @@ export function DashbookingLandingLeadCaptureSection({ content }: DashbookingLan
   return (
     <section
       id="lead-capture"
+      tabIndex={-1}
       className={submitted ? 'lead-capture section-shell is-submitted' : 'lead-capture section-shell'}
       aria-label={copy.ariaLabel}
     >
