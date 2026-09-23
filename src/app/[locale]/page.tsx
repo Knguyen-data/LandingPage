@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getDashbookingLandingContent } from '@/content/landing/dashbooking-landing-content-by-locale';
-import { DashbookingLandingPage } from '@/components/landing/dashbooking-landing-page';
-import { isSupportedLocale, supportedLocales } from '@/lib/i18n/locales';
+import { getDashbookingLandingContent } from '@/content';
+import { DashbookingLandingPage } from '@/sections/landing-page';
+import { isSupportedLocale, supportedLocales } from '@/lib/i18n';
 
 interface LocaleLandingPageProps {
   params: Promise<{ locale: string }>;

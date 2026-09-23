@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="giftBg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDF7F6"/>
+      <stop offset="1" stop-color="#EEFDFC"/>
+    </linearGradient>
+    <linearGradient id="giftFill" x1="16" y1="18" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08A8A9"/>
+      <stop offset="1" stop-color="#0796A7"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="18" fill="url(#giftBg)"/>
+  <rect x="15" y="27" width="34" height="23" rx="4" fill="url(#giftFill)"/>
+  <rect x="13" y="23" width="38" height="9" rx="3" fill="url(#giftFill)"/>
+  <path d="M32 23V50" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M15 31H49" stroke="white" stroke-width="3.2" stroke-linecap="round" opacity="0.95"/>
+  <path d="M31.8 22.5C27.6 21.6 23.3 19.5 22.4 16.2C21.9 14.3 23.1 12.5 25.1 12.3C28.5 12 31.1 16.1 31.8 22.5Z" stroke="#08A8A9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32.2 22.5C36.4 21.6 40.7 19.5 41.6 16.2C42.1 14.3 40.9 12.5 38.9 12.3C35.5 12 32.9 16.1 32.2 22.5Z" stroke="#08A8A9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

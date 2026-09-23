@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import type { ReactNode } from 'react';
-import { isSupportedLocale, supportedLocales } from '@/lib/i18n/locales';
+import { isSupportedLocale, supportedLocales } from '@/lib/i18n';
 
 interface LocaleLayoutProps {
   children: ReactNode;

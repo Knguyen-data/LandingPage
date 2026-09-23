@@ -43,9 +43,7 @@ next-env.d.ts
 .claude/
 plans/
 docs/
-tests/
 research/
-feedback/
 resource/
 artifacts/
 CLAUDE.md

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Nunito_Sans, Inter } from 'next/font/google';
+import { Nunito_Sans, Inter, Playpen_Sans } from 'next/font/google';
 import './globals.css';
 
 const headingFont = Nunito_Sans({
@@ -15,6 +15,13 @@ const bodyFont = Inter({
   display: 'swap',
 });
 
+const noteFont = Playpen_Sans({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-note',
+  weight: ['600', '700'],
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: 'Dash Booking',
   description: 'Multilingual Dash Booking landing page for nail and beauty salons.',
@@ -27,7 +34,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
-      <body className={`${headingFont.variable} ${bodyFont.variable}`}>
+      <body className={`${headingFont.variable} ${bodyFont.variable} ${noteFont.variable}`}>
         {children}
       </body>
     </html>
